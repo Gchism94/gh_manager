@@ -17,11 +17,9 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-
-[project.urls]
-Homepage = "https://github.com/Gchism94/gh_manager"
-
-[project.dependencies]
 dependencies = [
     "requests>=2.0.0"
 ]
+
+[project.urls]
+Homepage = "https://github.com/Gchism94/gh_manager"
