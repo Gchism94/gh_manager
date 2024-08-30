@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -17,9 +17,22 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+requires-python = ">=3.6"
+
 dependencies = [
     "requests>=2.0.0"
 ]
 
 [project.urls]
-Homepage = "https://github.com/Gchism94/gh_manager"
+Homepage = "https://github.com/yourusername/gh_manager"
+
+# Entry points for command-line scripts
+[project.scripts]
+delete-repo = "gh_manager.delete_repo:main"
+add-user = "gh_manager.org_username_add:main"
+add-file = "gh_manager.repo_file_add:main"
+update-file = "gh_manager.repo_file_update:main"
+github-token = "gh_manager.github_token_manager:main"
+
+# Declare dynamic fields if needed
+dynamic = ["requires-python", "scripts"]
