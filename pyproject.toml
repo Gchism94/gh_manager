@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh_manager"
+version = "0.1.0"
+description = "A versatile toolkit for managing GitHub repositories, users, and personal access tokens."
+authors = [
+    { name = "Greg Chism", email = "gchism@arizona.edu" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+keywords = ["GitHub", "repository management", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/Gchism94/gh_manager"
+
+[project.dependencies]
+requests = "^2.0.0"  # Ensure to match the required version
