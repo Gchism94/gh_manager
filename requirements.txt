@@ -1,0 +1,2 @@
+requests>=2.0.0
+pytest>=6.0.0   # If you are using pytest for testing
