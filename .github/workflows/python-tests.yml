@@ -2,9 +2,9 @@ name: Python Tests
 
 on:
   push:
-    branches: [ main ]  # Change to your main branch name if different
+    branches: [ main ]  # Adjust as per your branch
   pull_request:
-    branches: [ main ]  # Change to your main branch name if different
+    branches: [ main ]  # Adjust as per your branch
 
 jobs:
   test:
@@ -30,8 +30,7 @@ jobs:
 
     - name: Install the package
       run: |
-        pip install .
-
+        pip install .  # Ensures the package is installed correctly
 
     - name: Run tests
       run: |
